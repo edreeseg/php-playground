@@ -6,32 +6,25 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PHP</title>
+    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-
+      .key {
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-        <header>
-          <ul>
-            <!-- Two ways to handle iterating through arrays to add HTML elements: -->
-            <?php
-              foreach($names as $name){
-                echo "<li>$name</li>";
-              }
-            ?>
-          </ul>
-          <ul>
-            <!-- This will be identical to the above -->
-              <?php foreach($names as $name) : ?>
-              <li><?= $name ?></li>
-              <?php endforeach ?>
-          </ul>
-        </header>
+    <ul>
+      <?php foreach ($person as $trait => $value) :?>
+        <li>
+          <span class="key"><?= $trait . ': '; ?></span><?= $value; ?>
+        </li>
+      <?php endforeach ?>
+    </ul>
   </body>
 </html>
