@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>PHP</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
@@ -45,7 +45,7 @@
                 
                 <!-- Below, we make use of the built in `htmlspecialchars` function to convert text to html
                 representation, and sanitize the input -->
-                <?= 'Hello, ' . htmlspecialchars($GET_['name']) ?>
+                <?= 'Hello, ' . htmlspecialchars($_GET['name']) ?>
             </h1>
         </header>
         
