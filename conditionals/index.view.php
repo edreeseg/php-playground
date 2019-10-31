@@ -42,7 +42,6 @@
                 <!-- Identical to above: -->
                 <?php if ($task['completed']) : ?>
                     <span class="icon">Complete</span>
-                <?php endif; ?>
                 <?php else : ?>
                     <span class="icon">Incomplete</span>
                 <?php endif; ?>
